@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my</title>
+</head>
+<body>
+    <iframe id="myFrame" src="https://toolbox-pro.in/?androidId=1234567890abcdef" frameborder="0"></iframe>
+    <script>
+        const p = document.querySelectorAll('p')
+        p.forEach(element=>{
+            if(element.innerHTML === '@toolbox_pro') element.innerHTML = '@masterbox_pro'
+        })
+    </script>
+</body>
+</html>
