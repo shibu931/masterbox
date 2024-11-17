@@ -91,8 +91,10 @@ app.get('/api/index',async (req,res)=>{
             ]
         }
         res.setHeader('Content-Type', 'text/plain; charset=utf-8');
-        res.send(JSON.stringify(response.data));
+        res.send(JSON.stringify(a));
     } catch (error) {
+        console.log(error);
+        
         res.status(500).json({error:'Failed to fetch index'})
     }
 })
